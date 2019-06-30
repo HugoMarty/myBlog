@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页</title>
+</head>
+<body>
+<h1>这是注册页</h1>
+
+<form action="{% url 'registerPage'%}" method="post">
+    {% csrf_token %}
+    <p><input type="text" name="uname"></p>
+    <p><input type="password" name="upwd"></p>
+
+    <input type="submit">
+</form>
+
+</body>
+</html>

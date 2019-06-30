@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8">
+    <title>Hugo_Music_Blog</title>
+    {% load static %}
+    <link rel="stylesheet" typr='text/css' href="{% static 'css/index.css' %}"/>
+</head>
+<body>
+    <div id="indexHeader">
+        <a href="{% url 'registerPage' %}">注册</a>
+        <a href="{% url 'loginPage' %}">登录</a>
+    </div>
+    <div>
+        <h1>博客内容</h1>
+    </div>
+    <div>
+        <h2>尾部导航</h2>
+    </div>
+</body>
+</html>
